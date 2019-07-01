@@ -11,8 +11,10 @@ public class FactorialTest
     public class FactorialListTest {
 
         Factorial ob;
+
         @Before
         public void setUp() throws Exception {
+
             ob=new Factorial();
         }
 
@@ -22,13 +24,18 @@ public class FactorialTest
         }
 
         @Test
-        public void longFactorialCheck() {
+        public void longFactorialCheck()
+        {
+
             String res=ob.longFactorial();
+
             assertEquals("1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n",res);
         }
         @Test
-        public void intFactorialCheck() {
+        public void intFactorialCheck()
+        {
             String res=ob.intFactorial();
+
             assertEquals("1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n",res);
         }
     }

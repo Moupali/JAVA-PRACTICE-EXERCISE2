@@ -7,19 +7,22 @@ import static org.junit.Assert.*;
 
     public class Palindrome
     {
-        public static String find_Pallindrome(String word,int len)
+        public static String find_Pallindrome(String word,int length)
         {
-            String word_dup="";
-            if(len<=1)
+            String word_duplicate="";
+
+            if(length<=1)
                 return "String is Pallindrome";
             else
             {
-                for(int i=len-1;i>=0;i--) {
+                //Reverse for loop
+                for(int i=length-1;i>=0;i--)
+                {
                     char ch = word.charAt(i);
-                    word_dup = word_dup + ch;
+                    word_duplicate = word_duplicate + ch;
                 }
             }
-            if(word_dup.equalsIgnoreCase(word))
+            if(word_duplicate.equalsIgnoreCase(word))
                 return "String is Pallindrome";
             else
                 return "String is not Pallindrome";

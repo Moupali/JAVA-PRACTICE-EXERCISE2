@@ -8,8 +8,10 @@ package com.stackroute.junittest2;
 }
 public class MemberVariable
 {
+    //instance creation
     Member obj=new Member();
     String output="";
+
     public String inputDetails(String Name,int age,double salary)
     {
         obj.Name=Name;

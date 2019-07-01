@@ -1,20 +1,21 @@
 package com.stackroute.junittest2;
 
-public class Power {
-    public boolean powerOfFour(int num)
+public class Power
+{
+    public boolean powerOfFour(int number)
     {
-        while(num>0)
+        while(number>0)
         {
-            if(num==1)
+            if(number==1)
             {
                 return true;
             }
-            if(num%4 !=0){
+            if(number%4 !=0){
 
                 return false;
             }
             else{
-                num=num/4;
+                number=number/4;
             }
         }
         return false;

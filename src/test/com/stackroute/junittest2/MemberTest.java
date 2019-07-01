@@ -22,8 +22,10 @@ public class MemberTest {
     }
 
     @Test
-    public void returnMemberVariable() {
+    public void returnMemberVariable()
+    {
         String result = obj.inputDetails("Moupali Dutta", 21, 28000.0f);
+
         assertEquals("Members Name:Moupali Dutta\nMembers Age:21\nMembers Salary:28000.0", result);
     }
 }

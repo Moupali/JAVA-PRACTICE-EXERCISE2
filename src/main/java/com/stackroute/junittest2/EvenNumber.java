@@ -4,9 +4,13 @@ public class EvenNumber {
 
     public static boolean isEven(int number)
     {
-        if (number % 2 == 0) {
+        //it checks whether the number is divisible by 2 or not.
+        if (number % 2 == 0)
+        {
             return true;
-        } else {
+        }
+        else
+        {
             return false;
         }
 
