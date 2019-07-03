@@ -28,7 +28,7 @@ public class PowerTest {
         Power obj=new Power();
         //Act
         boolean result=obj.powerOfFour(14);
-        assertEquals("false",result);
+        assertEquals(false,result);
     }
     @Test
     public void givenStringShouldReturnTrue()
@@ -36,7 +36,7 @@ public class PowerTest {
         Power obj=new  Power();
         //Act
         boolean result=obj.powerOfFour(64);
-        assertEquals("true",result);
+        assertEquals(true,result);
     }
     @Test
     public void givenStringShouldReturnFalseForZero()
@@ -44,7 +44,7 @@ public class PowerTest {
         Power obj=new  Power();
         //Act
         boolean result=obj.powerOfFour(0);
-        assertEquals("false",result);
+        assertEquals(false,result);
     }
 
 
